@@ -1,0 +1,121 @@
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+h1,
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.transaction-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-button,
+.update-button,
+.cancel-button {
+  padding: 10px;
+  margin: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-button:hover,
+.update-button:hover,
+.cancel-button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.transaction-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.transaction-item {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.transaction-content {
+  display: flex;
+  align-items: center;
+}
+
+.transaction-description {
+  font-weight: bold;
+}
+
+.transaction-amount {
+  margin-left: 15px;
+  font-size: 18px;
+}
+
+.transaction-item button {
+  padding: 5px 10px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.transaction-item button.edit-button {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.transaction-item button.edit-button:hover {
+  background-color: #0056b3;
+}
+
+.transaction-item button.delete-button {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.transaction-item button.delete-button:hover {
+  background-color: #c82333;
+}
+
+.expense {
+  background-color: #ffc4c4;
+}
+
+.revenue {
+  background-color: #c1f0c1;
+}
+
+.total {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}

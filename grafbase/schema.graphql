@@ -1,0 +1,26 @@
+# Welcome to Grafbase!
+# Define your data models, integrate auth, permission rules, custom resolvers, search, and more with Grafbase.
+
+# Integrate Auth
+# https://grafbase.com/docs/auth
+#
+# schema @auth(providers: [{ type: oidc, issuer: "{{ env.ISSUER_URL }}" }], rules: [{ allow: private }]) {
+#   query: Query
+# }
+
+# Define Data Models
+# https://grafbase.com/docs/database
+# Define Data Models
+
+type Transaction @model {
+  id: ID!
+  description: String!
+  amount: Float!
+  date: String!
+  type: String!
+}
+
+# Start your backend
+# You don't need to write custom resolvers, Grafbase generates them for you.
+# https://grafbase.com/docs/cli
+# npx grafbase dev
