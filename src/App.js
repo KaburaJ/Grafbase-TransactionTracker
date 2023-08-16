@@ -3,7 +3,7 @@ import "./App.css";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const API_KEY ="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2OTIwMzc2MTksImlzcyI6ImdyYWZiYXNlIiwiYXVkIjoiMDFIN1RNVDc2UEExUUdSQkhHWlExSjBNODgiLCJqdGkiOiIwMUg3VE1UODFHMjc5U0ZENFg1MEMyR1g3NyIsImVudiI6InByb2R1Y3Rpb24iLCJwdXJwb3NlIjoicHJvamVjdC1hcGkta2V5In0.zS_mhlwsih85xEUQTxDR8JAMaOgOjvamBYVQoMKBgts";
+const API_KEY =process.env.REACT_APP_MY_API_KEY
 
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
 
   const fetchTransactions = async () => {
     try {
-      const response = await fetch("https://transactions-tracker-main-kaburaj-ypzlcblq.grafbase.app/graphql", {
+      const response = await fetch(process.env.REACT_APP_MY_API_URL, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -64,7 +64,7 @@ function App() {
   const handleAddTransaction = async () => {
     if (description && amount && date) {
       try {
-        const response = await fetch("https://transactions-tracker-main-kaburaj-ypzlcblq.grafbase.app/graphql", {
+        const response = await fetch(process.env.REACT_APP_MY_API_URL, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -119,7 +119,7 @@ function App() {
 
   const handleDeleteTransaction = async (transactionId) => {
     try {
-      const response = await fetch("https://transactions-tracker-main-kaburaj-ypzlcblq.grafbase.app/graphql", {
+      const response = await fetch(process.env.REACT_APP_MY_API_URL, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -173,7 +173,7 @@ function App() {
           type,
         };
   
-        const response = await fetch("https://transactions-tracker-main-kaburaj-ypzlcblq.grafbase.app/graphql", {
+        const response = await fetch(process.env.REACT_APP_MY_API_URL, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
