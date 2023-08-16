@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Grafbase-TransactionTracker/static/css/main.2eacb643.css",
+    "main.js": "/Grafbase-TransactionTracker/static/js/main.83f1ffce.js",
+    "index.html": "/Grafbase-TransactionTracker/index.html",
+    "main.2eacb643.css.map": "/Grafbase-TransactionTracker/static/css/main.2eacb643.css.map",
+    "main.83f1ffce.js.map": "/Grafbase-TransactionTracker/static/js/main.83f1ffce.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2eacb643.css",
+    "static/js/main.83f1ffce.js"
+  ]
+}
